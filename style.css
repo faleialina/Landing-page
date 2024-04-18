@@ -1,0 +1,321 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Regular.ttf) format("truetupe"),
+    url(./fonts/Inter-Black.ttf) format("truetupe"),
+    url(./fonts/Inter-SemiBold.ttf) format("truetupe");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+body {
+  background: #ffffff;
+  margin: auto;
+}
+.background {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px, 100px, 64px, 100px;
+  gap: 24px;
+}
+
+.title h1 {
+  font: 900 70px "Inter";
+  color: #000000;
+}
+.title p {
+  font: 400 18px "Inter";
+  color: var(--black-80, #2a2b2fcc);
+}
+
+.btn-request {
+  width: 366px;
+  height: 64px;
+  padding: 20px 24px 20px 24px;
+  gap: 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: #0146fe;
+  font: 600 20px "Inter";
+  color: #ffffff;
+}
+
+.language,
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px, 100px, 64px, 100px;
+  gap: 70px;
+}
+.language .language-title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 681px;
+  text-align: center;
+}
+
+.language .language-title h1 {
+  font: 900 70px "Inter";
+  color: #000000;
+}
+.language .language-title p {
+  font: 400 18px "Inter";
+  color: #2a2b2fe5;
+}
+.language div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.language .translation,
+.language .socialListening,
+.language .contentGeneration {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 422px;
+  padding: 24px 16px 16px 16px;
+  border-radius: 32px;
+  border: 2px solid #0000000a;
+}
+.language .translation h1,
+.language .socialListening h1,
+.language .contentGeneration h1 {
+  font: 900 34px "Inter";
+  color: #000000;
+}
+.language .translation p,
+.language .socialListening p,
+.language .contentGeneration p {
+  font: 400 18px "Inter";
+  color: #000000;
+  text-align: center;
+}
+
+.img-translation {
+  background-image: url(./assets/translation.svg);
+  width: 368px;
+  height: 245px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img-socialListening {
+  background-image: url(./assets/socialListening.svg);
+  width: 368px;
+  height: 245px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img-contentGeneration {
+  background-image: url(./assets/contentGeneration.svg);
+  width: 368px;
+  height: 245px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  padding: 70px, 100px, 0px, 100px;
+  gap: 64px;
+}
+.product .product-title {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+}
+
+.product .product-title h1 {
+  font: 900 60px "Inter";
+  color: #000000;
+}
+.product .product-title p {
+  font: 400 18px "Inter";
+  color: var(--black-80, #2a2b2fcc);
+}
+
+.product .btns {
+  display: flex;
+  gap: 16px;
+}
+.product .btns button {
+  height: 50px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: #0146fe;
+  font: 600 18px "Inter";
+  color: #ffffff;
+}
+
+.slider {
+  height: 500px;
+  position: relative;
+}
+
+.travelers1,
+.organization1,
+.employees1 {
+  display: flex;
+  gap: 30px;
+  height: 422px;
+  padding: 42px;
+  border-radius: 32px;
+  border: 2px solid #0000000a;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: -600px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.travelers1.active,
+.organization1.active,
+.employees1.active {
+  opacity: 1;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 514px;
+  gap: 32px;
+}
+.description h1 {
+  font: 900 60px "Inter";
+  color: #000000;
+}
+.description ul {
+  font: 400 18px "Inter";
+  color: #2a2b2fe5;
+  padding-left: 36px;
+}
+
+.img-travelers {
+  background-image: url(./assets/travelers.svg);
+  width: 507px;
+  height: 338px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 32px;
+}
+.img-organization {
+  background-image: url(./assets/organization.svg);
+  width: 507px;
+  height: 338px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 32px;
+}
+.img-employees {
+  background-image: url(./assets/employees.svg);
+  width: 507px;
+  height: 338px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 32px;
+}
+.help-wrap {
+  background-color: #f4f6fd;
+}
+.help {
+  max-width: 1200px;
+  margin: auto;
+}
+.help .help-title {
+  display: flex;
+  gap: 24px;
+}
+
+.help .help-title h1 {
+  font: 900 70px "Inter";
+  color: #000000;
+}
+
+.help div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.help-item {
+  display: flex;
+  flex-direction: column;
+  width: 295px;
+  height: 266px;
+  gap: 24px;
+  text-align: center;
+}
+.help-item h1 {
+  font: 900 34px "Inter";
+  color: #000000;
+}
+.help-item p {
+  font: 400 18px "Inter";
+  color: #7a869c;
+  text-align: center;
+}
+
+.img-frame_1 {
+  background-image: url(./assets/Frame\ 1.svg);
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img-frame_2 {
+  background-image: url(./assets/Frame\ 2.svg);
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img-frame_3 {
+  background-image: url(./assets/Frame\ 3.svg);
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img-frame_4 {
+  background-image: url(./assets/Frame\ 4.svg);
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img-frame_5 {
+  background-image: url(./assets/Frame\ 5.svg);
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img-frame_6 {
+  background-image: url(./assets/Frame\ 6.svg);
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
